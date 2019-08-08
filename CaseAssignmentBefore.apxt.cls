@@ -2,7 +2,6 @@ trigger CaseAssignmentBefore on Case (before insert, before delete, before updat
 /**
 * Author: Peter Sewell
 * TEST ONLY - FOR COMPLAINT CASE ASSIGNMENT 
-*
 * This trigger is responsible for keeping the Case_Assignment__c field on the case record in sync with the corresponding CA record of the case owner
 * Essentially the Case_Assignment__c field should always point to the Case_Assignment record of the user who owns the Case
 * The Case_Assignment__c field will however be set to null if: 1.case owner is a user without a Case_Assignment record OR 2. case owner is a queue
